@@ -1,0 +1,48 @@
+body {
+    max-width: 980px;
+    margin: 24px auto;
+    padding: 0 16px;
+    line-height: 1.55;
+}
+
+section {
+    margin: 34px 0;
+}
+
+nav ul {
+    padding-left: 18px;
+}   
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.quick-facts {
+    border: 1px solid #ddd;
+    padding: 12px 14px;
+    margin: 14px 0;
+}
+.quick-facts ul {
+    margin: 0;
+    padding-left: 18px;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+    margin-top: 14px;
+}
+.image-grid figure {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0;
+}
+.image-grid figcaption {
+    font-size: 0.92rem;
+    margin-top: 8px;
+}
+code {
+    background: #f2f2f2;
+    padding: 0 4px;
+}
