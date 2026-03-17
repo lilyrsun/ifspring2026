@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Hong Kong Egg Tarts (Dan Tat) | Lily Sun</title>
+        <meta
+            name="description"
+            content="A responsive recipe page for Hong Kong egg tarts with ingredients, equipment, step-by-step instructions, and process photos."
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="hero-image">
+                    <img
+                        src="images/egg-tarts-finished.webp"
+                        alt="Freshly baked Hong Kong egg tarts with glossy custard filling"
+                    />
+                </div>
+
+                <div class="hero-content">
+                    <p class="eyebrow">Dim Sum Pastry</p>
+                    <h1>Hong Kong Egg Tarts <span>(Dan Tat)</span></h1>
+                    <p class="intro">
+                        A flaky pastry shell filled with smooth, lightly sweet custard.
+                        Best enjoyed warm, fresh from the oven.
+                    </p>
+
+                    <dl class="recipe-meta">
+                        <div>
+                            <dt>Yield</dt>
+                            <dd>16 tarts</dd>
+                        </div>
+                        <div>
+                            <dt>Prep</dt>
+                            <dd>1 hr 15 min</dd>
+                        </div>
+                        <div>
+                            <dt>Cook</dt>
+                            <dd>25 min</dd>
+                        </div>
+                        <div>
+                            <dt>Total</dt>
+                            <dd>1 hr 40 min</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="before-you-begin">
+                <h2>Before You Begin</h2>
+
+                <div class="before-grid">
+                    <section class="ingredients">
+                        <h3>Ingredients</h3>
+                        
+                        <div class="serving-control">
+                            <label for="servings">Yield</label>
+                            <select id="servings" aria-label="Choose serving size">
+                                <option value="0.5">8 tarts</option>
+                                <option value="1" selected>16 tarts</option>
+                                <option value="1.5">24 tarts</option>
+                                <option value="2">32 tarts</option>
+                            </select>
+                        </div>
+
+                        <ul class="checklist ingredients-list">
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>
+                                        <span class="amount" data-base="2" data-unit="cups">2 cups</span>
+                                        all-purpose flour
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>
+                                        <span class="amount" data-base="0.125" data-unit="teaspoon">1/8 teaspoon</span>
+                                        salt
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>
+                                        <span class="amount" data-base="12" data-unit="tablespoons">12 tablespoons</span>
+                                        unsalted butter, slightly softened
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>
+                                        <span class="amount" data-base="2" data-unit="tablespoons">2 tablespoons</span>
+                                        cold water
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>
+                                        <span class="amount" data-base="0.5" data-unit="cup">1/2 cup</span>
+                                        granulated sugar
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>
+                                        <span class="amount" data-base="1" data-unit="cup">1 cup</span>
+                                        hot water
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>
+                                        <span class="amount" data-base="0.5" data-unit="cup">1/2 cup</span>
+                                        evaporated milk, room temperature
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>
+                                        <span class="amount" data-base="3" data-unit="large eggs">3</span>
+                                        large eggs, room temperature
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>
+                                        <span class="amount" data-base="1" data-unit="teaspoon">1 teaspoon</span>
+                                        vanilla extract
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="equipment">
+                        <h3>Equipment</h3>
+
+                        <ul class="checklist">
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Mixing bowl</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Rolling pin</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Whisk</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Fine mesh strainer</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Measuring cup or pitcher with pour spout</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Mini tart tins or standard muffin pan</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Oven</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Digital kitchen scale (recommended)</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
+             <section class="nutrition">
+                <h2>Nutrition</h2>
+                <p>
+                    Per tart: 180 calories, 19g carbs, 3g protein, 10g fat, 6g saturated fat,
+                    56mg cholesterol, and 41mg sodium.
+                </p>
+
+                <section class="allergens">
+                    <h3>Allergen Information</h3>
+                    <p>
+                        This recipe contains <strong>gluten, dairy, and eggs</strong>. 
+                        It may not be suitable for individuals with related allergies or sensitivities.
+                    </p>
+                </section>
+            </section>
+
+            <section class="recipe-notes">
+                <h2>Tips &amp; Notes</h2>
+                <ul>
+                    <li>For best results, measure flour by weight if possible.</li>
+                    <li>Straining the custard helps create a smooth, glassy finish.</li>
+                    <li>The dough can be made ahead and chilled overnight.</li>
+                    <li>Egg tarts are best served warm.</li>
+                </ul>
+            </section>
+
+            <section class="instructions">
+                <h2>Instructions</h2>
+
+                <ol class="steps">
+                    <li>
+                        <div class="step-content">
+                            <h3>1. Start the dough</h3>
+                            <p>
+                                Combine the flour and salt. Add the softened butter and work it into the
+                                flour until the mixture looks like coarse crumbs with some pea-sized pieces
+                                still visible.
+                            </p>
+                        </div>
+
+                        <div class="step-gallery">
+                            <figure>
+                                <img src="images/butter-cubes.webp" alt="Butter cubes added to flour mixture" />
+                                <figcaption>Butter added to the flour.</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/coarse-crumbs.webp" alt="Butter mixed into flour until coarse crumbs form" />
+                                <figcaption>Coarse crumbs with visible butter pieces.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="step-content">
+                            <h3>2. Bring the dough together and chill</h3>
+                            <p>
+                                Add cold water and gently bring the dough together with your hands. It may
+                                look a little dry and rough at first, which is normal. Wrap and chill for
+                                20 minutes.
+                            </p>
+                        </div>
+
+                        <div class="step-gallery">
+                            <figure>
+                                <img src="images/scraggly-dough.webp" alt="Scraggly dough texture before chilling" />
+                                <figcaption>The dough should still look scraggly before resting.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="step-content">
+                            <h3>3. Roll and laminate the dough</h3>
+                            <p>
+                                Roll the dough into a long rectangle, fold it into thirds like a letter,
+                                rotate it a quarter turn, then roll and fold again. Chill the folded dough
+                                for 1 hour.
+                            </p>
+                        </div>
+
+                        <div class="step-gallery">
+                            <figure>
+                                <img src="images/dough-rectangle.webp" alt="Dough rolled into long rectangle" />
+                                <figcaption>Roll into a long rectangle.</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/book-fold.webp" alt="Dough folded into thirds like a letter" />
+                                <figcaption>Fold into thirds.</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/quarter-turn.webp" alt="Quarter-turn of folded dough before rolling" />
+                                <figcaption>Turn before rolling again.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="step-content">
+                            <h3>4. Make the custard filling</h3>
+                            <p>
+                                Dissolve the sugar in hot water and let it cool. Whisk together the
+                                evaporated milk, eggs, and vanilla, then whisk in the sugar water. Strain
+                                the mixture for a smoother finish.
+                            </p>
+                        </div>
+
+                        <div class="step-gallery">
+                            <figure>
+                                <img src="images/whisking-custard.webp" alt="Whisking egg custard filling" />
+                                <figcaption>Whisk until fully combined.</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/straining-custard.webp" alt="Straining custard through a fine mesh strainer" />
+                                <figcaption>Strain for a smooth, glassy custard.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="step-content">
+                            <h3>5. Roll the dough and cut the shells</h3>
+                            <p>
+                                Preheat the oven to 375°F. Roll the dough to about 5mm thick, then cut out
+                                4-inch circles for the tart shells.
+                            </p>
+                        </div>
+
+                        <div class="step-gallery">
+                            <figure>
+                                <img src="images/rolling-thin.webp" alt="Rolling dough thin for tart shells" />
+                                <figcaption>Roll the dough thin.</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/cutting-circles.webp" alt="Cutting dough circles for tart shells" />
+                                <figcaption>Cut circles for the shells.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="step-content">
+                            <h3>6. Press the dough into the tins</h3>
+                            <p>
+                                Press each dough round into a tart tin or muffin cup, leaving a slight lip
+                                over the top edge to allow for shrinkage while baking.
+                            </p>
+                        </div>
+
+                        <div class="step-gallery">
+                            <figure>
+                                <img src="images/pressing-shell.webp" alt="Pressing dough into tart tin with lip over edge" />
+                                <figcaption>Press dough into the tin with a slight overhang.</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/shells-lined.webp" alt="Tart shells prepared in pan" />
+                                <figcaption>Shells ready before filling.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="step-content">
+                            <h3>7. Fill and bake</h3>
+                            <p>
+                                Pour the custard into the shells until they are about three-quarters full.
+                                Carefully transfer to the oven, reduce the heat to 350°F, and bake until
+                                the custard is just set.
+                            </p>
+                        </div>
+
+                        <div class="step-gallery">
+                            <figure>
+                                <img src="images/custard-filled-shells.webp" alt="Tart shells filled with custard before baking" />
+                                <figcaption>Fill the shells carefully without overfilling.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="step-content">
+                            <h3>8. Cool and serve</h3>
+                            <p>
+                                Let the tarts cool for at least 10 minutes before serving. They are best
+                                enjoyed warm, when the pastry is still crisp and the custard is silky.
+                            </p>
+                        </div>
+
+                        <div class="step-gallery">
+                            <figure>
+                                <img src="images/cooling.webp" alt="Egg tarts cooling after baking" />
+                                <figcaption>Cool slightly before eating.</figcaption>
+                            </figure>
+
+                            <figure>
+                                <img src="images/egg-tarts-finished.webp" alt="Finished Hong Kong egg tarts cooling on a rack" />
+                                <figcaption>The finished tarts should have a glossy custard top.</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>
+                Recipe adapted from
+                <a href="https://thewoksoflife.com/hong-kong-egg-tarts/" target="_blank" rel="noopener">
+                    The Woks of Life
+                </a>
+            </p>
+        </footer>
+
+        <script>
+            const servingsSelect = document.getElementById("servings");
+            const amounts = document.querySelectorAll(".amount");
+
+            function formatAmount(value) {
+                const fractions = {
+                    0.125: "1/8",
+                    0.25: "1/4",
+                    0.333: "1/3",
+                    0.5: "1/2",
+                    0.667: "2/3",
+                    0.75: "3/4"
+                };
+
+                const rounded = Math.round(value * 1000) / 1000;
+
+                if (Number.isInteger(rounded)) {
+                    return rounded.toString();
+                }
+
+                const whole = Math.floor(rounded);
+                const decimal = Math.round((rounded - whole) * 1000) / 1000;
+
+                if (fractions[decimal]) {
+                    return whole > 0 ? `${whole} ${fractions[decimal]}` : fractions[decimal];
+                }
+
+                return rounded.toFixed(2).replace(/\.00$/, "").replace(/0$/, "");
+            }
+
+            function formatUnit(amount, unit) {
+                if (unit === "cup" && amount !== 1) return "cups";
+                if (unit === "teaspoon" && amount !== 1) return "teaspoons";
+                if (unit === "tablespoon" && amount !== 1) return "tablespoons";
+                return unit;
+            }
+
+            function updateServings() {
+                const multiplier = parseFloat(servingsSelect.value);
+
+                amounts.forEach((item) => {
+                    const base = parseFloat(item.dataset.base);
+                    const rawUnit = item.dataset.unit;
+                    const newAmount = base * multiplier;
+                    const unit = formatUnit(newAmount, rawUnit);
+
+                    if (rawUnit === "large eggs") {
+                        item.textContent = formatAmount(newAmount);
+                    } else {
+                        item.textContent = `${formatAmount(newAmount)} ${unit}`;
+                    }
+                });
+            }
+
+            servingsSelect.addEventListener("change", updateServings);
+            updateServings();
+        </script>
+    </body>
+</html>
