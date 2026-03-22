@@ -87,3 +87,94 @@ a#btn_cocacola img {
     width: 130px;
     margin-top: 15px;
 }
+
+/* samsung button */
+
+a#btn_samsung {
+    display: inline-block;
+    position: relative;
+    width: 240px;
+    height: 88px;
+    margin: auto;
+    margin-top: 90px;
+    background: #1428a0;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 50% / 45%;
+    transform: rotate(-12deg);
+    box-shadow: 0 10px 18px rgba(0,0,0,.18);
+}
+
+a#btn_samsung .samsung-label {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(12deg); /* counteracts button tilt */
+}
+
+a#btn_samsung .samsung-label img {
+    width: 75%;
+    max-width: 180px;
+    height: auto;
+    display: block;
+}
+
+a#btn_samsung .samsung-galaxy {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .45s ease;
+    background:
+        radial-gradient(circle at 30% 35%, rgba(105,140,255,.45), transparent 22%),
+        radial-gradient(circle at 68% 65%, rgba(152,92,255,.35), transparent 24%),
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,.08), transparent 35%),
+        linear-gradient(135deg, #02030a 0%, #070b1f 45%, #000000 100%);
+}
+
+a#btn_samsung .samsung-stars {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .45s ease;
+    background:
+        radial-gradient(circle at 18% 28%, white 0 1.2px, transparent 1.8px),
+        radial-gradient(circle at 34% 62%, rgba(255,255,255,.9) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 52% 20%, white 0 1.4px, transparent 2px),
+        radial-gradient(circle at 63% 47%, rgba(255,255,255,.85) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 78% 31%, white 0 1.2px, transparent 1.9px),
+        radial-gradient(circle at 84% 68%, rgba(255,255,255,.95) 0 1.3px, transparent 2px),
+        radial-gradient(circle at 25% 78%, rgba(255,255,255,.8) 0 1.1px, transparent 1.8px);
+}
+
+a#btn_samsung:hover {
+    background: #03050d;
+    box-shadow: 0 14px 24px rgba(0,0,0,.28);
+}
+
+a#btn_samsung:hover .samsung-galaxy,
+a#btn_samsung:hover .samsung-stars {
+    opacity: 1;
+}
+
+a#btn_samsung:hover .samsung-stars {
+    opacity: 1;
+    animation: samsung-twinkle 2.6s ease-in-out infinite alternate;
+}
+
+@keyframes samsung-twinkle {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(-1px) scale(1.03);
+        opacity: 1;
+    }
+}
