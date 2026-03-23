@@ -38,7 +38,6 @@ a#btn_cocacola .coke-wave-svg {
     transition: opacity .35s ease, bottom .45s ease;
 }
 
-/* Cola colors */
 a#btn_cocacola .coke-parallax use:nth-child(1) {
     fill: #4a2412;
 }
@@ -51,7 +50,6 @@ a#btn_cocacola .coke-parallax use:nth-child(3) {
     fill: #8a4722;
 }
 
-/* Hover state */
 a#btn_cocacola:hover .coke-wave-svg {
     opacity: 1;
     bottom: -8px;
@@ -114,7 +112,8 @@ a#btn_samsung .samsung-label {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(12deg); /* counteracts button tilt */
+    transform: rotate(12deg);
+    pointer-events: none;
 }
 
 a#btn_samsung .samsung-label img {
@@ -177,4 +176,156 @@ a#btn_samsung:hover .samsung-stars {
         transform: translateY(-1px) scale(1.03);
         opacity: 1;
     }
+}
+
+/* exploding kittens button */
+
+a#btn_explodingkittens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 220px;
+    height: 80px;
+    margin: auto;
+    margin-top: 92px;
+    background: transparent;
+    border-radius: 16px;
+    overflow: visible;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: transform .25s ease;
+}
+
+a#btn_explodingkittens .ek-logo {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    height: auto;
+    transition: transform .3s ease, opacity .3s ease;
+    pointer-events: none;
+}
+
+a#btn_explodingkittens .ek-kitten {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 140px;
+    height: auto;
+    opacity: 0;
+    z-index: 5;
+    pointer-events: none;
+    transform: translate(-50%, 60px) scale(.6);
+    transition: transform .45s cubic-bezier(.2,.8,.2,1.2), opacity .3s ease;
+}
+
+a#btn_explodingkittens:hover {
+    transform: translateY(-2px);
+}
+
+a#btn_explodingkittens:hover .ek-logo {
+    transform: translateY(30px) scale(.92);
+}
+
+a#btn_explodingkittens:hover .ek-kitten {
+    opacity: 1;
+    transform: translate(-50%, -45px) scale(0.9);
+}
+
+/* npr logo */
+
+a#btn_npr {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin: auto;
+    margin-top: 96px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    transition: transform .25s ease;
+}
+
+a#btn_npr .npr-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: lowercase;
+    transition: transform .25s ease, filter .25s ease;
+}
+
+a#btn_npr .npr-n { background: #d62021; }
+a#btn_npr .npr-p { background: #000000; }
+a#btn_npr .npr-r { background: #237bbd; }
+
+a#btn_npr:hover {
+    transform: translateY(-5px);
+}
+
+a#btn_npr:hover .npr-block {
+    transform: translateY(-2px);
+    filter: brightness(1.3);
+}
+
+/* foreflight logo */
+
+a#btn_foreflight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    margin-top: 55px;
+    background: #13233f;
+    border-radius: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    box-sizing: border-box;
+    box-shadow: 0 10px 18px rgba(0,0,0,.16);
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+a#btn_foreflight .ff-base {
+    position: relative;
+    z-index: 1;
+    width: 72%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+}
+
+a#btn_foreflight .ff-plane {
+    position: absolute;
+    z-index: 3;
+    width: 25%;
+    height: auto;
+    display: block;
+    pointer-events: none;
+    transition: transform .7s cubic-bezier(.2,.8,.2,1), opacity .45s ease;
+}
+
+a#btn_foreflight:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 26px rgba(0,0,0,.22);
+    background: #172b4d;
+}
+
+a#btn_foreflight:hover .ff-plane {
+    transform: translateY(-70px) scale(0.7);
+    opacity: .2;
+}
+
+a#btn_foreflight:hover .ff-trail {
+    opacity: 1;
 }
