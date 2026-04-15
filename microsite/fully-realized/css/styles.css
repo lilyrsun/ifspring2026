@@ -810,7 +810,7 @@ nav {
   .category-circle { width: 100px; height: 100px; }
   .media-grid { grid-template-columns: 1fr; }
   .media-item.large { grid-row: span 1; min-height: 200px; }
-  .shop-grid { grid-template-columns: repeat(2, 1fr); }
+  .shop-grid { grid-template-columns: 1fr; }
   .sightings-grid { grid-template-columns: 1fr; }
 }
 
