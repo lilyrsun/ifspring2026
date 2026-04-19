@@ -17,7 +17,12 @@
       </span>
       miffy's epicenter
     </a>
-    <ul class="nav-links">
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="mobileNav">
       <li><a href="about.html">about</a></li>
       <li><a href="media.html">media</a></li>
       <li><a href="sightings.html">sightings</a></li>
@@ -453,6 +458,18 @@
         closeProductModal();
       }
     });
+  </script>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('mobileNav');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
   </script>
 
 </body>

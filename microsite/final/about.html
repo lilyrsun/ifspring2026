@@ -7,11 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/about.css">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
 </head>
 <body>
 
-<!-- NAV -->
+<!-- nav -->
 <nav>
   <a href="index.html" class="nav-logo">
     <span class="logo-placeholder">
@@ -19,7 +18,12 @@
     </span>
     miffy's epicenter
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" id="mobileNav">
     <li><a href="about.html" class="active">about</a></li>
     <li><a href="media.html">media</a></li>
     <li><a href="sightings.html">sightings</a></li>
@@ -27,7 +31,7 @@
   </ul>
 </nav>
 
-<!-- ABOUT INTRO -->
+<!-- about intro -->
 <section class="about-intro">
   <div class="about-intro-image">
     <span><img src="images/about-images/Dick-Bruna-miffy.jpg" alt="Dick Bruna with miffy"></span>
@@ -38,7 +42,7 @@
   </div>
 </section>
 
-<!-- HISTORY -->
+<!-- history -->
 <section class="history-section">
   <div class="history-card">
     <h2>history</h2>
@@ -52,14 +56,14 @@
   </div>
 </section>
 
-<!-- QUOTE -->
+<!-- quote -->
 <section class="quote-section">
   <span class="quote-divider">〰〰〰〰〰〰〰〰</span>
   <p class="quote-text">"According to Japanese and Chinese astrology, Dick Bruna was born in the year of the rabbit."</p>
   <span class="quote-divider-bottom">〰〰〰〰〰〰〰〰</span>
 </section>
 
-<!-- MIFFY'S NAME -->
+<!-- miffy's name -->
 <section class="name-section">
   <div class="name-image">
     <img src="images/about-images/balloon-miffy.png" alt="Miffy with balloon">
@@ -70,7 +74,7 @@
   </div>
 </section>
 
-<!-- CHARACTERS -->
+<!-- characters -->
 <section class="characters-section">
   <div class="characters-header">
     <h2>meet the characters</h2>
@@ -78,8 +82,6 @@
   </div>
 
   <div class="characters-carousel">
-
-    <!-- MAIN -->
     <article class="character-card">
       <div class="character-image-wrap">
         <img src="images/characters/miffy-transparent.png" alt="Miffy">
@@ -140,7 +142,6 @@
       </div>
     </article>
 
-    <!-- FAMILY -->
     <article class="character-card">
       <div class="character-image-wrap">
         <img src="images/characters/father-bunny.png" alt="Father Bunny">
@@ -191,7 +192,6 @@
       </div>
     </article>
 
-    <!-- EXTENDED -->
     <article class="character-card">
       <div class="character-image-wrap">
         <img src="images/characters/auntie-alice.png" alt="Auntie Alice">
@@ -236,7 +236,7 @@
   
 </section>
 
-<!-- FOOTER -->
+<!-- footer -->
 
 <footer class="site-footer">
   <div class="footer-inner">
@@ -277,6 +277,18 @@
     <p>Miffy’s Epicenter Microsite | Lily Sun </p>
   </div>
 </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.getElementById('mobileNav');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+</script>
 
 </body>
 </html>

@@ -106,6 +106,27 @@ nav {
   width: 100%;
 }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 110;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: var(--yellow);
+  border-radius: 999px;
+}
+
+.nav-toggle span + span {
+  margin-top: 5px;
+}
+
 /* HERO */
 .shop-page-hero {
   max-width: 850px;
@@ -692,5 +713,44 @@ nav {
   .product-modal-close {
     top: 10px;
     right: 10px;
+  }
+
+    nav {
+    padding: 12px 20px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: var(--navy-dark);
+    border-bottom: 2px solid rgba(245, 197, 24, 0.15);
+    padding: 10px 20px 16px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li + li {
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    font-size: 0.9rem;
+    padding: 6px 0;
+  }
+
+  .footer-note {
+    display: none;
   }
 }

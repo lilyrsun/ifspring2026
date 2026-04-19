@@ -17,7 +17,12 @@
     </span>
     miffy's epicenter
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" id="mobileNav">
     <li><a href="about.html">about</a></li>
     <li><a href="media.html">media</a></li>
     <li><a href="sightings.html">sightings</a></li>
@@ -25,7 +30,7 @@
   </ul>
 </nav>
 
-<!-- HERO -->
+<!-- hero -->
 <section class="hero">
   <img src="images/home-images/hero-sky.png" alt="Moon and stars" class="hero-sky">
     <svg class="hero-title" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +46,7 @@
     </svg>
 </section>
 
-<!-- ABOUT -->
+<!-- about section -->
 <section class="about-section" id="about">
   <div class="about-header">
     <span class="icon-placeholder">
@@ -53,7 +58,7 @@
   <a href="about.html" class="btn-primary">learn more</a>
 </section>
 
-<!-- CATEGORIES -->
+<!-- categories -->
 <div class="categories">
 
   <a href="media.html" class="category-item">
@@ -85,8 +90,7 @@
 
 </div>
 
-<!-- MEDIA -->
-
+<!-- media section -->
 <section class="media-section" id="media">
   <h2 class="section-header">miffy media</h2>
 
@@ -131,7 +135,7 @@
   </div>
 </section>
 
-<!-- SIGHTINGS -->
+<!-- sightings section -->
 <section class="sightings-section" id="sightings">
   <h2 class="section-header">sightings in the wild</h2>
   <p class="section-subtext sightings-subtext">
@@ -196,7 +200,7 @@
   </div>
 </section>
 
-<!-- SHOP -->
+<!-- shop section -->
 <section class="shop-section" id="shop">
   <h2 class="section-header">shop till you drop</h2>
   <p class="section-subtext shop-subtext">
@@ -266,7 +270,7 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- footer -->
 
 <footer class="site-footer">
   <div class="footer-inner">
@@ -308,7 +312,7 @@
   </div>
 </footer>
 
-<!-- SIGHTING MAP MODAL -->
+<!-- sighting map modal -->
 <div class="map-modal" id="mapModal" aria-hidden="true">
   <div class="map-modal-backdrop" id="mapBackdrop"></div>
 
@@ -381,6 +385,18 @@
       closeMapModal();
     }
   });
+</script>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.getElementById('mobileNav');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
 </script>
 
 </body>
