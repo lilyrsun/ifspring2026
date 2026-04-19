@@ -1,0 +1,103 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #005398;
+  --navy-dark: #193C53;
+  --green: #227032;
+  --brown: #864E2E;
+  --yellow: #FFC810;
+  --white: #ffffff;
+  --font-display: 'Baloo 2', cursive;
+  --font-body: 'Nunito', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--navy);
+  color: var(--white);
+}
+
+/* HERO */
+.hero {
+  padding: 120px 24px 80px;
+  text-align: center;
+  background: var(--navy-dark);
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--yellow);
+  margin-bottom: 12px;
+}
+
+.hero-subtext {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.eyebrow {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 24px;
+}
+
+.section-blue {
+  background: var(--navy);
+}
+
+.section-green {
+  background: var(--green);
+}
+
+.section-brown {
+  background: var(--brown);
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--yellow);
+  margin-bottom: 16px;
+}
+
+.section p,
+.section li {
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.section ul {
+  padding-left: 18px;
+}
+
+.section li + li {
+  margin-top: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .hero {
+    padding: 80px 16px 50px;
+  }
+
+  .section {
+    padding: 60px 16px;
+  }
+}
