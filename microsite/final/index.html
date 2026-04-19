@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miffy's Epicenter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="logo-placeholder">
+        <img src="images/home-images/site-logo-icon.png" alt="Miffy's Epicenter Logo">
+    </span>
+    miffy's epicenter
+  </a>
+  <ul class="nav-links">
+    <li><a href="about.html">about</a></li>
+    <li><a href="media.html">media</a></li>
+    <li><a href="sightings.html">sightings</a></li>
+    <li><a href="shop.html">shoppable</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/home-images/hero-sky.png" alt="Moon and stars" class="hero-sky">
+    <svg class="hero-title" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <path id="curve" d="M 0,180 Q 400,40 800,180" fill="transparent" />
+    </defs>
+    <text>
+        <textPath href="#curve" startOffset="50%" text-anchor="middle" 
+                font-family="'Baloo 2', cursive" font-size="62" font-weight="800" fill="white">
+        the miffy epicenter
+        </textPath>
+    </text>
+    </svg>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-header">
+    <span class="icon-placeholder">
+        <img src="images/home-images/peek.png" alt="Miffy Icon">
+    </span>
+    <h2>about</h2>
+  </div>
+  <p>Miffy is Dick Bruna's best known and most popular character, featuring in more than 30 books, far more than any other character he created. Miffy appeals to children all over the world, instilling a sense of safety. Many children are able to identify with Miffy and her adventures. She is uncomplicated and innocent, has a positive attitude and is always open to new experiences.</p>
+  <a href="about.html" class="btn-primary">learn more</a>
+</section>
+
+<!-- CATEGORIES -->
+<div class="categories">
+
+  <a href="media.html" class="category-item">
+    <div class="category-circle">
+      <span>
+        <img src="images/home-images/media-transparent.png" alt="Miffy Media">
+      </span>
+    </div>
+    <span class="category-label">media</span>
+  </a>
+
+  <a href="sightings.html" class="category-item">
+    <div class="category-circle">
+      <span>
+        <img src="images/home-images/sightings-transparent.png" alt="Miffy Sightings" class="category-icon-sightings">
+      </span>
+    </div>
+    <span class="category-label">sightings</span>
+  </a>
+
+  <a href="shop.html" class="category-item">
+    <div class="category-circle">
+      <span>
+        <img src="images/home-images/shoppable-transparent.png" alt="Miffy Shoppable">
+      </span>
+    </div>
+    <span class="category-label">shoppable</span>
+  </a>
+
+</div>
+
+<!-- MEDIA -->
+
+<section class="media-section" id="media">
+  <h2 class="section-header">miffy media</h2>
+
+  <p class="section-subtext sightings-subtext">
+    spend a moment with miffy and friends in these fun videos
+  </p>
+
+  <div class="media-grid">
+    <a
+      class="media-item large media-thumb-1"
+      href="https://www.youtube.com/watch?v=wU0gybxh-cU"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Watch Miffy and Friends video"
+    >
+      <div class="play-btn"></div>
+    </a>
+
+    <a
+      class="media-item media-thumb-2"
+      href="https://www.youtube.com/watch?v=cIht7nhUDKQ"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Watch classic Miffy animation"
+    >
+      <div class="play-btn"></div>
+    </a>
+
+    <a
+      class="media-item media-thumb-3"
+      href="https://www.youtube.com/watch?v=DXjGRzJjKGM"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Watch Miffy storytime video"
+    >
+      <div class="play-btn"></div>
+    </a>
+  </div>
+
+  <div class="section-cta">
+    <a href="media.html" class="btn-primary">see more</a>
+  </div>
+</section>
+
+<!-- SIGHTINGS -->
+<section class="sightings-section" id="sightings">
+  <h2 class="section-header">sightings in the wild</h2>
+  <p class="section-subtext sightings-subtext">
+    some sweet little miffy moments spotted out in the world
+  </p>
+
+  <div class="sightings-grid">
+    <button
+      class="sighting-card"
+      type="button"
+      data-map="https://www.google.com/maps?q=Miffy+Museum+Utrecht&output=embed"
+      data-title="miffy museum"
+      data-location="utrecht, netherlands"
+    >
+      <img
+        src="images/home-images/sighting-utrecht.jpg"
+        alt="Miffy museum exterior or display"
+      >
+      <div class="sighting-card-info">
+        <h3>miffy museum</h3>
+        <p>utrecht, netherlands</p>
+      </div>
+    </button>
+
+    <button
+      class="sighting-card"
+      type="button"
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.2335169661387!2d-74.0139411!3d40.70266590000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b0028cf1b77%3A0xec7372ceea517db6!2sMiffy%20Statue!5e1!3m2!1sen!2sus!4v1776193977443!5m2!1sen!2sus"
+      data-title="miffy statue"
+      data-location="new york city"
+    >
+      <img
+        src="images/home-images/sighting-nyc.jpg"
+        alt="Miffy statue display"
+      >
+      <div class="sighting-card-info">
+        <h3>miffy statue</h3>
+        <p>new york city</p>
+      </div>
+    </button>
+
+    <button
+      class="sighting-card"
+      type="button"
+      data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.872669227899!2d135.6777303!3d35.014690900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001095c147359f1%3A0x230fd057e68aacb0!2sArashiyama%20Miffy%20Sakura%20Kitchen!5e1!3m2!1sen!2sus!4v1776195494339!5m2!1sen!2sus"
+      data-title="arashiyama miffy sakura kitchen"
+      data-location="kyoto, japan"
+    >
+      <img
+        src="images/home-images/sighting-kyoto.jpg"
+        alt="Miffy merchandise spotted in a store"
+      >
+      <div class="sighting-card-info">
+        <h3>miffy sakura kitchen</h3>
+        <p>kyoto, japan</p>
+      </div>
+    </button>
+  </div>
+
+  <div class="section-cta">
+    <a href="sightings.html" class="btn-primary">see more</a>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="shop-section" id="shop">
+  <h2 class="section-header">shop till you drop</h2>
+  <p class="section-subtext shop-subtext">
+    a few adorable miffy finds to browse, collect, and obsess over
+  </p>
+
+  <div class="shop-grid">
+    <a
+      class="shop-card"
+      href="https://miffytown.com/bf-25-15/miffy-handmade-and-her-bright-rainbowdress/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View Miffy plush product"
+    >
+      <img src="images/home-images/shop-1.jpg" alt="Miffy plush toy">
+      <div class="shop-card-info">
+        <h3>classic miffy plush</h3>
+        <p>soft toy</p>
+      </div>
+    </a>
+
+    <a
+      class="shop-card"
+      href="https://miffytown.com/bf-2520/miffy-tote-bag-blue/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View Miffy tote bag product"
+    >
+      <img src="images/home-images/shop-2.jpg" alt="Miffy tote bag">
+      <div class="shop-card-info">
+        <h3>miffy tote bag</h3>
+        <p>everyday accessory</p>
+      </div>
+    </a>
+
+    <a
+      class="shop-card"
+      href="https://miffytown.com/housewares/cpus-cutlery-and-place-settings/miffy-mug/ceramic-mug-retro-miffy-tulps-red/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View Miffy mug product"
+    >
+      <img src="images/home-images/shop-3.jpg" alt="Miffy mug">
+      <div class="shop-card-info">
+        <h3>miffy mug</h3>
+        <p>kitchen favorite</p>
+      </div>
+    </a>
+
+    <a
+      class="shop-card"
+      href="https://miffytown.com/accessories/miffy-doing-things-blind-box/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View Miffy figurine product"
+    >
+      <img src="images/home-images/shop-4.jpg" alt="Miffy figurine">
+      <div class="shop-card-info">
+        <h3>miffy figurine</h3>
+        <p>desk decor</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="section-cta">
+    <a href="shop.html" class="btn-primary">shop all</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img
+        src="images/home-images/site-logo-icon.png"
+        alt="Miffy's Epicenter logo"
+        class="footer-logo"
+      >
+      <h3>miffy’s epicenter</h3>
+      <p>a cozy little corner of the internet for all things miffy.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>explore</h4>
+      <ul>
+        <li><a href="about.html">about</a></li>
+        <li><a href="media.html">media</a></li>
+        <li><a href="sightings.html">sightings</a></li>
+        <li><a href="shop.html">shoppable</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-note">
+      <h4>note</h4>
+      <p>
+        microsite for communication design: interaction foundations
+      </p>
+      <p class="footer-source">
+        designer & developer: lily sun
+        <br>
+        creative director: rocio laucerica
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Miffy’s Epicenter Microsite | Lily Sun </p>
+  </div>
+</footer>
+
+<!-- SIGHTING MAP MODAL -->
+<div class="map-modal" id="mapModal" aria-hidden="true">
+  <div class="map-modal-backdrop" id="mapBackdrop"></div>
+
+  <div
+    class="map-modal-content"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="mapModalTitle"
+  >
+    <button class="map-modal-close" id="mapCloseBtn" aria-label="Close map popup">
+      ×
+    </button>
+
+    <div class="map-modal-header">
+      <h3 id="mapModalTitle">sighting location</h3>
+      <p id="mapModalLocation"></p>
+    </div>
+
+    <div class="map-modal-frame-wrap">
+      <iframe
+        id="mapFrame"
+        src=""
+        title="Map location"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  const sightingCards = document.querySelectorAll('.sighting-card');
+  const mapModal = document.getElementById('mapModal');
+  const mapBackdrop = document.getElementById('mapBackdrop');
+  const mapCloseBtn = document.getElementById('mapCloseBtn');
+  const mapFrame = document.getElementById('mapFrame');
+  const mapModalTitle = document.getElementById('mapModalTitle');
+  const mapModalLocation = document.getElementById('mapModalLocation');
+
+  function openMapModal(mapUrl, title, location) {
+    mapFrame.src = mapUrl;
+    mapModalTitle.textContent = title;
+    mapModalLocation.textContent = location;
+    mapModal.classList.add('open');
+    mapModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMapModal() {
+    mapModal.classList.remove('open');
+    mapModal.setAttribute('aria-hidden', 'true');
+    mapFrame.src = '';
+    document.body.style.overflow = '';
+  }
+
+  sightingCards.forEach((card) => {
+    card.addEventListener('click', () => {
+      const mapUrl = card.dataset.map;
+      const title = card.dataset.title;
+      const location = card.dataset.location;
+      openMapModal(mapUrl, title, location);
+    });
+  });
+
+  mapCloseBtn.addEventListener('click', closeMapModal);
+  mapBackdrop.addEventListener('click', closeMapModal);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && mapModal.classList.contains('open')) {
+      closeMapModal();
+    }
+  });
+</script>
+
+</body>
+</html>
