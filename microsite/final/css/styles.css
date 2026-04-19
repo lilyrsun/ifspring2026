@@ -835,7 +835,7 @@ nav {
   .sightings-grid { grid-template-columns: 1fr; }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   nav {
     padding: 12px 20px;
   }
